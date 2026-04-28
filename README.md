@@ -41,10 +41,8 @@ Pressione CTRL+C para parar o servidor
 ## 📚 Acessar a API
 
 ### Swagger UI (Recomendado)
-Abra no navegador:
-```
- http://localhost:3000/api-docs
- ```
+Abra no navegador: `http://localhost:3000/api-docs`
+
 Lá você pode testar todos os endpoints de forma visual, sem precisar do Postman.
 
 ### Via Postman ou cURL
