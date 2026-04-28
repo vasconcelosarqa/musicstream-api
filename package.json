@@ -1,0 +1,25 @@
+{
+  "name": "musicstream-api",
+  "version": "1.0.0",
+  "description": "API de Streaming de Música — ambiente controlado para automação de testes com Cypress",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "api",
+    "streaming",
+    "música",
+    "testes",
+    "cypress",
+    "swagger"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "swagger-ui-express": "^5.0.0",
+    "uuid": "^9.0.0"
+  }
+}
