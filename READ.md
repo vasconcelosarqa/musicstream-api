@@ -42,8 +42,9 @@ Pressione CTRL+C para parar o servidor
 
 ### Swagger UI (Recomendado)
 Abra no navegador:
-``` http://localhost:3000/api-docs
 ```
+ http://localhost:3000/api-docs
+ ```
 Lá você pode testar todos os endpoints de forma visual, sem precisar do Postman.
 
 ### Via Postman ou cURL
@@ -126,33 +127,6 @@ curl -X GET http://localhost:3000/api/v1/artists
 
 ---
 
-## 🧪 Usar com Cypress
-
-Quando estiver testando com Cypress, configure a base URL como:
-
-```javascript
-// cypress.config.js
-module.exports = {
-  e2e: {
-    baseUrl: 'http://localhost:3000/api/v1'
-  }
-};
-```
-
-Exemplo de teste:
-```javascript
-describe('Artists API', () => {
-  it('Deve listar todos os artistas', () => {
-    cy.request('GET', '/artists').then((response) => {
-      expect(response.status).to.equal(200);
-      expect(response.body).to.be.an('array');
-    });
-  });
-});
-```
-
----
-
 ## 📝 Notas Importantes
 
 - **Banco de dados em memória:** Todos os dados são resetados quando você reinicia o servidor.
@@ -185,22 +159,6 @@ musicstream-api/
 **Swagger não aparece**
 - Certifique-se que o servidor está rodando (`npm start`)
 - Acesse exatamente: `http://localhost:3000/api-docs`
-
----
-
-## 📌 Próximos Passos
-
-Este repositório é a base para os testes automatizados com Cypress. Quando estiver pronto:
-
-1. Crie um repositório separado para os testes
-2. Configure o Cypress com a URL base desta API
-3. Comece com testes do fluxo CRUD de Artists
-
----
-
-## 📄 Licença
-
-MIT
 
 ---
 
